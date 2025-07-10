@@ -12,7 +12,7 @@ function App() {
     <MainContent />
     <Footer />
     <WelcomeMessage />
-    <UserProfile  Name = "Lyn Munene" Age = {20} Bio ="AlX Student" />
+    <UserProfile name="Alice" age="25" bio="Loves hiking and photography" />
     </>
   )
 }
