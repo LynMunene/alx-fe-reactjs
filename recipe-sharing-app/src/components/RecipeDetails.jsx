@@ -1,5 +1,5 @@
   // RecipeDetails component
-  import { useRecipeStore } from './recipeStore';
+  import { useRecipeStore } from './new';
 
   const RecipeDetails = ({ recipeId }) => {
     const recipe = useRecipeStore(state =>
