@@ -3,6 +3,7 @@ import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
 import EditRecipeForm from './components/EditRecipeForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SearchBar from './components/Searchbar';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         {/* Main page with recipe list and add form */}
         <Route path="/" element={
           <>
+          <SearchBar />
             <RecipeList />
             <AddRecipeForm />
           </>
