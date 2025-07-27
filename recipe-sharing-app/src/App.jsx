@@ -3,7 +3,9 @@ import AddRecipeForm from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
 import EditRecipeForm from './components/EditRecipeForm';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SearchBar from './components/Searchbar';
+import SearchBar from './components/SearchBar';
+import FavoritesList from './components/FavouritesList';
+import RecommendationsList from './components/RecommendationsList';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <SearchBar />
             <RecipeList />
             <AddRecipeForm />
+            <FavoritesList />
+            <RecommendationsList />
           </>
         } />
         
