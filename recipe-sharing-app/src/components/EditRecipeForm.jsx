@@ -21,7 +21,7 @@ const EditRecipeForm = () => {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    event.prventventDefault()
 
     if (!selectedTitle) {
       alert('Please select a recipe to edit')
