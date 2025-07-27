@@ -1,44 +1,44 @@
-import { useState } from 'react'
-import { useRecipeStore } from './recipeStore'
+import { useState } from 'react';
+import { useRecipeStore } from './recipeStore';
 
 const EditRecipeForm = () => {
-  const recipes = useRecipeStore((state) => state.recipes)
-  const updateRecipe = useRecipeStore((state) => state.updateRecipe)
+  const recipes = useRecipeStore((state) => state.recipes);
+  const updateRecipe = useRecipeStore((state) => state.updateRecipe);
 
-  const [selectedTitle, setSelectedTitle] = useState('')
-  const [newTitle, setNewTitle] = useState('')
-  const [newDescription, setNewDescription] = useState('')
+  const [selectedTitle, setSelectedTitle] = useState('');
+  const [newTitle, setNewTitle] = useState('');
+  const [newDescription, setNewDescription] = useState('');
 
-  const handleSelect = (e) => {
-    const title = e.target.value
-    setSelectedTitle(title)
+  const handleSelect = (event) => {
+    const title = event.target.value;
+    setSelectedTitle(title);
 
-    const recipe = recipes.find((r) => r.title === title)
+    const recipe = recipes.find((r) => r.title === title);
     if (recipe) {
-      setNewTitle(recipe.title)
-      setNewDescription(recipe.description || '')
+      setNewTitle(recipe.title);
+      setNewDescription(recipe.description || '');
     }
-  }
+  };
 
-  const handleSubmit = (e) => {
-    event.prventventDefault()
+  const handleSubmit = (event) => {
+    event.preventDefault();
 
     if (!selectedTitle) {
-      alert('Please select a recipe to edit')
-      return
+      alert('Please select a recipe to edit.');
+      return;
     }
 
     updateRecipe({
       title: selectedTitle,
       newTitle,
       description: newDescription,
-    })
+    });
 
-    // Optional: Reset form
-    setSelectedTitle('')
-    setNewTitle('')
-    setNewDescription('')
-  }
+    // Reset form
+    setSelectedTitle('');
+    setNewTitle('');
+    setNewDescription('');
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -57,19 +57,21 @@ const EditRecipeForm = () => {
           <input
             type="text"
             value={newTitle}
-            onChange={(e) => setNewTitle(e.target.value)}
+            onChange={(event) => setNewTitle(event.target.value)}
             placeholder="New Title"
+            required
           />
           <textarea
             value={newDescription}
-            onChange={(e) => setNewDescription(e.target.value)}
+            onChange={(event) => setNewDescription(event.target.value)}
             placeholder="New Description"
+            required
           />
           <button type="submit">Update Recipe</button>
         </>
       )}
     </form>
-  )
-}
+  );
+};
 
-export default EditRecipeForm
+export default EditRecipeForm;
