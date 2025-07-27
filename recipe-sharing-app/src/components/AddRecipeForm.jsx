@@ -1,7 +1,7 @@
 
  // AddRecipeForm component
  import { useState } from 'react';
- import  useRecipeStore  from '../recipeStore/useRecipeStore';
+ import  useRecipeStore  from './recipeStore/useRecipeStore';
 
  const AddRecipeForm = () => {
    const addRecipe = useRecipeStore(state => state.addRecipe);
