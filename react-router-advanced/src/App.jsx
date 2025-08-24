@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import {  BrowserRouter,Routes, Route, Link, Navigate } from 'react-router-dom'
 import Home from './components/Home'
 import About from './components/About'
 import Blog from './components/Blog'
@@ -46,7 +46,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:postId" element={<BlogPost />} />
+          <Route path="/blog/:id" element={<BlogPost />} />
           <Route
             path="/profile/*"
             element={
