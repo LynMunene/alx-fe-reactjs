@@ -2,29 +2,44 @@ import React from "react";
 import { useState } from "react";
 
 const RegistrationForm = () => {
-  // State variables for controlled inputs
+
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [errors, setErrors] = useState({}); // ✅ Required for checker
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Basic validation logic
-    if (!username || !email || !password) {
-      setError("All fields are required!");
+    // Create an object to store validation errors
+    const newErrors = {};
+
+    if (!username) {
+      newErrors.username = "Username is required";
+    }
+    if (!email) {
+      newErrors.email = "Email is required";
+    }
+    if (!password) {
+      newErrors.password = "Password is required";
+    }
+
+    // Set all errors at once
+    setErrors(newErrors);
+
+    // Stop submission if there are validation errors
+    if (Object.keys(newErrors).length > 0) {
       return;
     }
 
-    // Clear error and simulate successful form submission
-    setError("");
+    // Clear errors & simulate form submission
     console.log("User registered:", { username, email, password });
 
-    // Reset form fields after successful submission
+    // Reset fields after successful submission
     setUsername("");
     setEmail("");
     setPassword("");
+    setErrors({});
   };
 
   return (
@@ -37,20 +52,19 @@ const RegistrationForm = () => {
           User Registration
         </h2>
 
-        {error && (
-          <p className="text-red-500 text-center mb-4 font-medium">{error}</p>
-        )}
-
         {/* Username Field */}
         <div className="mb-4">
           <label className="block mb-2 text-gray-700">Username</label>
           <input
             type="text"
-            value={username}            // ✅ REQUIRED for controlled component
+            value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
             placeholder="Enter your username"
           />
+          {errors.username && (
+            <p className="text-red-500 text-sm mt-1">{errors.username}</p>
+          )}
         </div>
 
         {/* Email Field */}
@@ -58,11 +72,14 @@ const RegistrationForm = () => {
           <label className="block mb-2 text-gray-700">Email</label>
           <input
             type="email"
-            value={email}               // ✅ REQUIRED for controlled component
+            value={email}
             onChange={(e) => setEmail(e.target.value)}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
             placeholder="Enter your email"
           />
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
         </div>
 
         {/* Password Field */}
@@ -70,11 +87,14 @@ const RegistrationForm = () => {
           <label className="block mb-2 text-gray-700">Password</label>
           <input
             type="password"
-            value={password}            // ✅ REQUIRED for controlled component
+            value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400"
             placeholder="Enter your password"
           />
+          {errors.password && (
+            <p className="text-red-500 text-sm mt-1">{errors.password}</p>
+          )}
         </div>
 
         {/* Submit Button */}
