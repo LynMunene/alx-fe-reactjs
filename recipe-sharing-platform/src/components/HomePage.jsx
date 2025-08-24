@@ -43,7 +43,7 @@ const HomePage = () => {
               </div>
 
               {/* View Recipe Button */}
-              <Link to={`/recipes/${recipe.id}`}>
+              <Link to={`/recipe/${recipe.id}`}>
                 <button className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300">
                   View Recipe
                 </button>

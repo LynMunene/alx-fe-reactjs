@@ -2,25 +2,199 @@
   {
     "id": 1,
     "title": "Spaghetti Carbonara",
-    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://www.google.com/imgres?q=spaghetti%20carbonara&imgurl=https%3A%2F%2Fwww.allrecipes.com%2Fthmb%2Fa_0W8yk_LLCtH-VPqg2uLD9I5Pk%3D%2F0x512%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2F11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg&imgrefurl=https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F11973%2Fspaghetti-carbonara-ii%2F&docid=ULlsLafYmhYAWM&tbnid=9tLpDE2j-e6qkM&vet=12ahUKEwi8gcfW_6OPAxWIRqQEHUQ0LMQQM3oECBkQAA..i&w=683&h=512&hcb=2&ved=2ahUKEwi8gcfW_6OPAxWIRqQEHUQ0LMQQM3oECBkQAA"
+    "image": "https://source.unsplash.com/600x400/?spaghetti,pasta",
+    "summary": "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
+    "ingredients": [
+      "200g spaghetti",
+      "100g pancetta",
+      "2 large eggs",
+      "50g Parmesan cheese",
+      "1 tbsp olive oil",
+      "Salt & black pepper"
+    ],
+    "instructions": [
+      "Cook spaghetti in salted water until al dente.",
+      "Fry pancetta in olive oil until crispy.",
+      "Whisk eggs and Parmesan in a bowl.",
+      "Drain pasta and mix quickly with pancetta and egg mixture.",
+      "Season with black pepper and serve immediately."
+    ]
   },
   {
     "id": 2,
-    "title": "Chicken Tikka Masala",
-    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://www.google.com/imgres?q=chicken%20tikka%20masala&imgurl=https%3A%2F%2Fwww.skinnytaste.com%2Fwp-content%2Fuploads%2F2011%2F06%2FChicken-Tikka-Masala-15.jpg&imgrefurl=https%3A%2F%2Fwww.skinnytaste.com%2Fskinny-chicken-tikka-masala%2F&docid=wApbs1hSfzO92M&tbnid=dUYUw-X4j5sK5M&vet=12ahUKEwi4s7yOgKSPAxVYK_sDHex0JsUQM3oECBoQAA..i&w=1200&h=1800&hcb=2&ved=2ahUKEwi4s7yOgKSPAxVYK_sDHex0JsUQM3oECBoQAA"
+    "title": "Chicken Curry",
+    "image": "https://source.unsplash.com/600x400/?chicken,curry",
+    "summary": "A flavorful and aromatic chicken curry cooked in a rich, spiced sauce.",
+    "ingredients": [
+      "500g chicken breast",
+      "2 onions, chopped",
+      "3 garlic cloves, minced",
+      "2 tbsp curry powder",
+      "400ml coconut milk",
+      "Salt & pepper"
+    ],
+    "instructions": [
+      "Sauté onions and garlic in oil until golden.",
+      "Add chicken pieces and cook until browned.",
+      "Stir in curry powder and cook for 1 minute.",
+      "Pour in coconut milk and simmer for 20 minutes.",
+      "Season and serve hot with rice."
+    ]
   },
   {
     "id": 3,
-    "title": "Avocado Toast",
-    "summary": "Fresh avocados smashed on crispy toast, topped with olive oil and chili flakes.",
-    "image": "https://www.google.com/imgres?q=avocado%20toast&imgurl=https%3A%2F%2Fs.lightorangebean.com%2Fmedia%2F20240914152419%2FVegan-Avocado-Toast_-doner.png&imgrefurl=https%3A%2F%2Flightorangebean.com%2Fvegan-avocado-toast%2F&docid=fleDgP9Unv-dfM&tbnid=-cefWb00raF3CM&vet=12ahUKEwjonZOpgKSPAxXUT6QEHdS5LbsQM3oECC4QAA..i&w=1376&h=864&hcb=2&ved=2ahUKEwjonZOpgKSPAxXUT6QEHdS5LbsQM3oECC4QAA"
+    "title": "Vegetable Stir Fry",
+    "image": "https://source.unsplash.com/600x400/?vegetable,stirfry",
+    "summary": "A quick and healthy stir-fry packed with colorful veggies and soy sauce.",
+    "ingredients": [
+      "1 red bell pepper, sliced",
+      "1 yellow bell pepper, sliced",
+      "1 carrot, julienned",
+      "100g broccoli florets",
+      "2 tbsp soy sauce",
+      "1 tbsp sesame oil"
+    ],
+    "instructions": [
+      "Heat sesame oil in a wok.",
+      "Add vegetables and stir-fry for 3-5 minutes.",
+      "Pour in soy sauce and toss until coated.",
+      "Serve hot with rice or noodles."
+    ]
   },
   {
     "id": 4,
-    "title": "Beef Stir-Fry",
-    "summary": "Tender beef slices stir-fried with colorful vegetables and savory soy sauce.",
-    "image": "https://www.google.com/imgres?q=beef%20stir%20fry&imgurl=https%3A%2F%2Flifeloveandgoodfood.com%2Fwp-content%2Fuploads%2F2022%2F06%2FPepper-Steak-Stir-Fry-2-1200x1200-1.jpg&imgrefurl=https%3A%2F%2Flifeloveandgoodfood.com%2Fpepper-steak-stir-fry%2F&docid=PRWAscbKPpxE8M&tbnid=Svqhrn9jdXzgSM&vet=12ahUKEwjKnLC3gKSPAxVLdqQEHRnYBb8QM3oECCQQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwjKnLC3gKSPAxVLdqQEHRnYBb8QM3oECCQQAA"
+    "title": "Beef Tacos",
+    "image": "https://source.unsplash.com/600x400/?tacos,beef",
+    "summary": "Delicious beef tacos with fresh toppings and a tangy salsa.",
+    "ingredients": [
+      "300g ground beef",
+      "1 onion, chopped",
+      "1 tsp chili powder",
+      "6 taco shells",
+      "Lettuce, tomatoes, and cheese for topping"
+    ],
+    "instructions": [
+      "Cook ground beef and onion in a skillet until browned.",
+      "Add chili powder and mix well.",
+      "Spoon mixture into taco shells.",
+      "Top with lettuce, tomatoes, and cheese."
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Avocado Toast",
+    "image": "https://source.unsplash.com/600x400/?avocado,toast",
+    "summary": "A healthy and tasty avocado toast topped with poached eggs and herbs.",
+    "ingredients": [
+      "2 slices sourdough bread",
+      "1 ripe avocado",
+      "1 tsp lemon juice",
+      "2 poached eggs",
+      "Salt & pepper"
+    ],
+    "instructions": [
+      "Toast the bread until golden brown.",
+      "Mash avocado with lemon juice, salt, and pepper.",
+      "Spread mixture on toast and top with poached eggs.",
+      "Garnish with fresh herbs."
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Pancakes",
+    "image": "https://source.unsplash.com/600x400/?pancakes,breakfast",
+    "summary": "Fluffy and soft pancakes served with syrup and berries.",
+    "ingredients": [
+      "200g all-purpose flour",
+      "2 tbsp sugar",
+      "1 tsp baking powder",
+      "250ml milk",
+      "1 egg",
+      "Butter for frying"
+    ],
+    "instructions": [
+      "Mix flour, sugar, and baking powder in a bowl.",
+      "Whisk in milk and egg until smooth.",
+      "Heat butter in a pan and pour batter in small circles.",
+      "Flip when bubbles form and cook until golden.",
+      "Serve with syrup and berries."
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Grilled Salmon",
+    "image": "https://source.unsplash.com/600x400/?salmon,grilled",
+    "summary": "A simple yet delicious grilled salmon with lemon and herbs.",
+    "ingredients": [
+      "2 salmon fillets",
+      "1 tbsp olive oil",
+      "1 tbsp lemon juice",
+      "Salt & pepper",
+      "Fresh dill"
+    ],
+    "instructions": [
+      "Marinate salmon in lemon juice, olive oil, salt, and pepper.",
+      "Grill for 4-5 minutes on each side.",
+      "Garnish with fresh dill and serve."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Chocolate Brownies",
+    "image": "https://source.unsplash.com/600x400/?brownies,chocolate",
+    "summary": "Rich and fudgy chocolate brownies with a gooey center.",
+    "ingredients": [
+      "200g dark chocolate",
+      "150g butter",
+      "150g sugar",
+      "2 eggs",
+      "100g flour"
+    ],
+    "instructions": [
+      "Melt chocolate and butter together.",
+      "Whisk in sugar and eggs until smooth.",
+      "Fold in flour and pour into a baking pan.",
+      "Bake at 180°C for 25 minutes.",
+      "Cool, slice, and serve."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Greek Salad",
+    "image": "https://source.unsplash.com/600x400/?salad,greek",
+    "summary": "A refreshing Greek salad with feta cheese, olives, and fresh veggies.",
+    "ingredients": [
+      "1 cucumber, sliced",
+      "2 tomatoes, diced",
+      "1 red onion, sliced",
+      "100g feta cheese",
+      "50g black olives",
+      "2 tbsp olive oil"
+    ],
+    "instructions": [
+      "Combine cucumber, tomatoes, onion, feta, and olives in a bowl.",
+      "Drizzle with olive oil and toss well.",
+      "Serve chilled."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Shrimp Fried Rice",
+    "image": "https://source.unsplash.com/600x400/?shrimp,friedrice",
+    "summary": "A quick and tasty shrimp fried rice with vegetables and soy sauce.",
+    "ingredients": [
+      "200g shrimp, peeled",
+      "2 cups cooked rice",
+      "1 cup mixed vegetables",
+      "2 tbsp soy sauce",
+      "2 eggs, scrambled",
+      "1 tbsp sesame oil"
+    ],
+    "instructions": [
+      "Heat sesame oil in a pan and cook shrimp until pink.",
+      "Add vegetables and stir-fry for 2 minutes.",
+      "Stir in rice, soy sauce, and scrambled eggs.",
+      "Cook for another 3 minutes and serve hot."
+    ]
   }
 ]
