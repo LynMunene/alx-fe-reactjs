@@ -17,7 +17,6 @@ const AddRecipeForm = () => {
     if (!ingredients.trim()) {
       formErrors.ingredients = "Ingredients are required.";
     } else {
-      // Check if at least 2 ingredients are provided (comma-separated)
       const ingredientsArray = ingredients
         .split(",")
         .map((item) => item.trim())
@@ -60,13 +59,19 @@ const AddRecipeForm = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-lg bg-white shadow-lg rounded-xl p-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+      {/* Container with responsive layout */}
+      <div className="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 md:p-10">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-8 text-center">
           Add a New Recipe
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-5">
+
+        {/* Responsive two-column layout on medium+ screens */}
+        <form
+          onSubmit={handleSubmit}
+          className="grid grid-cols-1 md:grid-cols-2 gap-6"
+        >
           {/* Recipe Title */}
-          <div>
+          <div className="col-span-1 md:col-span-2">
             <label className="block text-gray-700 font-medium mb-1">
               Recipe Title
             </label>
@@ -87,7 +92,8 @@ const AddRecipeForm = () => {
           {/* Ingredients */}
           <div>
             <label className="block text-gray-700 font-medium mb-1">
-              Ingredients <span className="text-gray-500">(comma-separated)</span>
+              Ingredients{" "}
+              <span className="text-gray-500">(comma-separated)</span>
             </label>
             <textarea
               placeholder="e.g. Flour, Sugar, Eggs, Milk"
@@ -96,7 +102,7 @@ const AddRecipeForm = () => {
               className={`w-full px-4 py-2 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 errors.ingredients ? "border-red-500" : "border-gray-300"
               }`}
-              rows="3"
+              rows="5"
             ></textarea>
             {errors.ingredients && (
               <p className="text-red-500 text-sm mt-1">{errors.ingredients}</p>
@@ -109,7 +115,7 @@ const AddRecipeForm = () => {
               Preparation Steps
             </label>
             <textarea
-              placeholder="Write step-by-step instructions here..."
+              placeholder="Write step-by-step instructions..."
               value={steps}
               onChange={(e) => setSteps(e.target.value)}
               className={`w-full px-4 py-2 border rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-green-500 ${
@@ -122,13 +128,15 @@ const AddRecipeForm = () => {
             )}
           </div>
 
-          {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
-          >
-            Submit Recipe
-          </button>
+          {/* Submit Button - full width on mobile, right-aligned on desktop */}
+          <div className="md:col-span-2 flex justify-center md:justify-end">
+            <button
+              type="submit"
+              className="w-full md:w-auto bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300"
+            >
+              Submit Recipe
+            </button>
+          </div>
         </form>
       </div>
     </div>

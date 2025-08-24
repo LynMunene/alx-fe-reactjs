@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Spaghetti Carbonara",
+    "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
+    "image": "https://www.google.com/imgres?q=spaghetti%20carbonara&imgurl=https%3A%2F%2Fwww.allrecipes.com%2Fthmb%2Fa_0W8yk_LLCtH-VPqg2uLD9I5Pk%3D%2F0x512%2Ffilters%3Ano_upscale()%3Amax_bytes(150000)%3Astrip_icc()%2F11973-spaghetti-carbonara-ii-DDMFS-4x3-6edea51e421e4457ac0c3269f3be5157.jpg&imgrefurl=https%3A%2F%2Fwww.allrecipes.com%2Frecipe%2F11973%2Fspaghetti-carbonara-ii%2F&docid=ULlsLafYmhYAWM&tbnid=9tLpDE2j-e6qkM&vet=12ahUKEwi8gcfW_6OPAxWIRqQEHUQ0LMQQM3oECBkQAA..i&w=683&h=512&hcb=2&ved=2ahUKEwi8gcfW_6OPAxWIRqQEHUQ0LMQQM3oECBkQAA"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Tikka Masala",
+    "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
+    "image": "https://www.google.com/imgres?q=chicken%20tikka%20masala&imgurl=https%3A%2F%2Fwww.skinnytaste.com%2Fwp-content%2Fuploads%2F2011%2F06%2FChicken-Tikka-Masala-15.jpg&imgrefurl=https%3A%2F%2Fwww.skinnytaste.com%2Fskinny-chicken-tikka-masala%2F&docid=wApbs1hSfzO92M&tbnid=dUYUw-X4j5sK5M&vet=12ahUKEwi4s7yOgKSPAxVYK_sDHex0JsUQM3oECBoQAA..i&w=1200&h=1800&hcb=2&ved=2ahUKEwi4s7yOgKSPAxVYK_sDHex0JsUQM3oECBoQAA"
+  },
+  {
+    "id": 3,
+    "title": "Avocado Toast",
+    "summary": "Fresh avocados smashed on crispy toast, topped with olive oil and chili flakes.",
+    "image": "https://www.google.com/imgres?q=avocado%20toast&imgurl=https%3A%2F%2Fs.lightorangebean.com%2Fmedia%2F20240914152419%2FVegan-Avocado-Toast_-doner.png&imgrefurl=https%3A%2F%2Flightorangebean.com%2Fvegan-avocado-toast%2F&docid=fleDgP9Unv-dfM&tbnid=-cefWb00raF3CM&vet=12ahUKEwjonZOpgKSPAxXUT6QEHdS5LbsQM3oECC4QAA..i&w=1376&h=864&hcb=2&ved=2ahUKEwjonZOpgKSPAxXUT6QEHdS5LbsQM3oECC4QAA"
+  },
+  {
+    "id": 4,
+    "title": "Beef Stir-Fry",
+    "summary": "Tender beef slices stir-fried with colorful vegetables and savory soy sauce.",
+    "image": "https://www.google.com/imgres?q=beef%20stir%20fry&imgurl=https%3A%2F%2Flifeloveandgoodfood.com%2Fwp-content%2Fuploads%2F2022%2F06%2FPepper-Steak-Stir-Fry-2-1200x1200-1.jpg&imgrefurl=https%3A%2F%2Flifeloveandgoodfood.com%2Fpepper-steak-stir-fry%2F&docid=PRWAscbKPpxE8M&tbnid=Svqhrn9jdXzgSM&vet=12ahUKEwjKnLC3gKSPAxVLdqQEHRnYBb8QM3oECCQQAA..i&w=1200&h=1200&hcb=2&ved=2ahUKEwjKnLC3gKSPAxVLdqQEHRnYBb8QM3oECCQQAA"
+  }
+]
